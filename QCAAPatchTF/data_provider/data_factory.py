@@ -13,6 +13,8 @@ from data_provider.data_loader import (
 from data_provider.uea import collate_fn
 from torch.utils.data import DataLoader
 from data_provider.data_ravdess import Dataset_RAVDESS
+from data_provider.data_savee import Dataset_SAVEE
+
 
 data_dict = {
     "ETTh1": Dataset_ETT_hour,
@@ -28,6 +30,7 @@ data_dict = {
     "SWAT": SWATSegLoader,
     "UEA": UEAloader,
     "RAVDESS": Dataset_RAVDESS,
+    "SAVEE": Dataset_SAVEE
 }
 
 
